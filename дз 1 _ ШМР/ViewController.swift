@@ -8,7 +8,6 @@
 import UIKit
 
 /// Элемент ToDo листа
-/// Элемент ToDo листа
 struct ToDoItem {
 
     enum Importance: String {
@@ -17,7 +16,7 @@ struct ToDoItem {
         case important
     }
 
-    /// Уникальный ID
+    /// ID
     let id: String
 
     /// Строковое поле
@@ -57,11 +56,7 @@ struct ToDoItem {
     }
 }
 
-
-/// Расширение для структуры TodoItem
 extension ToDoItem {
-    
-    /// Вычислимое свойство для формирования json
     var json: Any {
         var jsonDictionary: [String: Any] = [
             "id": id,
@@ -78,14 +73,13 @@ extension ToDoItem {
         if importance != .ordinary {
             jsonDictionary["importance"] = importance.rawValue
         }
-        let parseJson = try? JSONSerialization.data(
-            withJSONObject: jsonDictionary,
-            options: .prettyPrinted
-        )
-        return parseJson ?? Data()
+//        let parseJson = try? JSONSerialization.data(
+//            withJSONObject: jsonDictionary,
+//            options: .prettyPrinted )
+        return jsonDictionary
     }
 
-    /// Функция для разбора json
+    /// Разбор json
     static func parse(json: Any) -> ToDoItem? {
         guard let jsonData = json as? Data,
               let dictionary = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any],
@@ -126,65 +120,48 @@ extension ToDoItem {
 
 final class FileCache{
     
-    private(set) var items: [ToDoItem] = []
+    private(set) var idToItem: [String: ToDoItem] = [:]
+    /// Сохранение всех дел в файл
+    func write(fileName: String) {
+        var dictionaries = [[String: Any]]()
+        idToItem.values.forEach { item in
+            if let dictrianoryItem = item.json as? [String: Any] {
+                dictionaries.append(dictrianoryItem)
+            }
+        }
+        let jsonDictionaries = try? JSONSerialization.data(
+                        withJSONObject: dictionaries,
+                        options: .prettyPrinted
+        )
+        try? jsonDictionaries?.write(to: getDocumentsDirectory().appendingPathComponent("\(fileName).json"))
+    }
+    
+    /// Загрузка всех дел из файла
+    func read(fileName: String) {
+        guard let data = try? String(contentsOfFile:                    getDocumentsDirectory().appendingPathComponent("\(fileName).json").absoluteString ),
+              let item = ToDoItem.parse(json: data) else { return }
+        idToItem[item.id] = item
+    }
+    
+    /// Поиск document directory
     private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
-    
-    func write(fileName: String) {
-        items.forEach { item in
-            let jsonData = item.json as? Data
-            try? jsonData?.write(to: getDocumentsDirectory().appendingPathComponent("\(String())"+".json"))
-        }
-    }
-
-    func read(fileName: String) {
-        guard let data = try? String(contentsOfFile: getDocumentsDirectory().appendingPathComponent("\(String())"+".json").absoluteString ) else { return }
-        let item = ToDoItem.parse(json: data)!
-        items.append(item)
-    }
-
-    func save(fileName: String, key: String) {
-        read(fileName: fileName)
-        
-        let id = fileName["id"]
-        let deadlineDate = (fileName, "deadlineDate")
-        let changingDate = (fileName, "changingDate")
-        let creationDate = (fileName, "creationDate")
-
-
-        let importance: ToDoItem.Importance
-        if let importanceRawValue = fileName["importance"] {
-            importance = ToDoItem.Importance(rawValue: importanceRawValue) ?? .ordinary
-        } else {
-            importance = .ordinary
-        }
-            
-    }
-    func removeItem(fileName: String, key: String) {
-        let fileURL = getDocumentsDirectory().appendingPathComponent(fileName)
-        do {
-            let jsonData = try? Data(contentsOf: fileURL)
-            guard var jsonDictianory = try? JSONSerialization.jsonObject(with: jsonData!) as? [String: Any] else {
-                return
-            }
-            if var texts = jsonDictianory["text"] as? [[String: Any]] {
-                texts.removeAll{ ($0["id"] as? String) == UUID().uuidString }
-                jsonDictianory["texts"] = texts
-            }
-            let updateData = try? JSONSerialization.data(withJSONObject: jsonDictianory)
-            write(fileName: fileName)
-        }
-        
-    }
-    func saveAllInJson() {
-        
-    }
-    func loadInJson(){
-        
-    }
-    
 }
+
+extension FileCache {
+    
+    /// Добавление item
+    func addItem(item: ToDoItem) {
+        idToItem[item.id] = item
+    }
+    
+    /// Удаления item
+    func removeItem(id: String) {
+        idToItem[id] = nil
+    }
+}
+
 
