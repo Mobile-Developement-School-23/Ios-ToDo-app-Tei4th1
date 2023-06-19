@@ -38,7 +38,7 @@ struct ToDoItem {
     let importance: Importance
 
     init(
-        id: String,
+        id: String = UUID().uuidString,
         text: String,
         deadlineDate: Date?,
         taskDone: Bool,
@@ -73,29 +73,24 @@ extension ToDoItem {
         if importance != .ordinary {
             jsonDictionary["importance"] = importance.rawValue
         }
-//        let parseJson = try? JSONSerialization.data(
-//            withJSONObject: jsonDictionary,
-//            options: .prettyPrinted )
         return jsonDictionary
     }
 
     /// Разбор json
     static func parse(json: Any) -> ToDoItem? {
-        guard let jsonData = json as? Data,
-              let dictionary = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any],
-              let text = dictionary["text"] as? String else {
+        guard let jsonData = json as? [String: Any],
+              let text = jsonData["text"] as? String,
+              let id = jsonData["id"] as? String,
+              let creationDate = makeDate(jsonData, "creationDate") else {
             return nil
         }
-        let id = (dictionary["id"] as? String) ?? UUID().uuidString
-
-        let deadlineDate = makeDate(dictionary, "deadlineDate")
-        let changingDate = makeDate(dictionary, "changingDate")
-        let creationDate = makeDate(dictionary, "creationDate")
-
-        let taskDone = dictionary["taskDone"] as? Bool ?? false
+        let deadlineDate = makeDate(jsonData, "deadlineDate")
+        let changingDate = makeDate(jsonData, "changingDate")
+        
+        let taskDone = jsonData["taskDone"] as? Bool ?? false
 
         let importance: Importance
-        if let importanceRawValue = dictionary["importance"] as? String {
+        if let importanceRawValue = jsonData["importance"] as? String {
             importance = Importance(rawValue: importanceRawValue) ?? .ordinary
         } else {
             importance = .ordinary
@@ -106,7 +101,7 @@ extension ToDoItem {
             text: text,
             deadlineDate: deadlineDate,
             taskDone: taskDone,
-            creationDate: creationDate ?? .now,
+            creationDate: creationDate,
             changingDate: changingDate,
             importance: importance
         )
@@ -120,7 +115,12 @@ extension ToDoItem {
 
 final class FileCache{
     
-    private(set) var idToItem: [String: ToDoItem] = [:]
+    private var idToItem: [String: ToDoItem] = [:]
+    
+    var items: [ToDoItem] {
+        return Array(idToItem.values)
+    }
+    
     /// Сохранение всех дел в файл
     func write(fileName: String) {
         var dictionaries = [[String: Any]]()
@@ -129,18 +129,20 @@ final class FileCache{
                 dictionaries.append(dictrianoryItem)
             }
         }
-        let jsonDictionaries = try? JSONSerialization.data(
-                        withJSONObject: dictionaries,
-                        options: .prettyPrinted
-        )
+        let jsonDictionaries = try? JSONSerialization.data(withJSONObject: dictionaries,options: .prettyPrinted)
         try? jsonDictionaries?.write(to: getDocumentsDirectory().appendingPathComponent("\(fileName).json"))
     }
     
     /// Загрузка всех дел из файла
     func read(fileName: String) {
-        guard let data = try? String(contentsOfFile:                    getDocumentsDirectory().appendingPathComponent("\(fileName).json").absoluteString ),
-              let item = ToDoItem.parse(json: data) else { return }
-        idToItem[item.id] = item
+        guard let data = try? Data(contentsOf: getDocumentsDirectory().appendingPathComponent("\(fileName).json")),
+              let jsonArray = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]] else { return }
+        
+        jsonArray.forEach { dictionary in
+            if let todoItem = ToDoItem.parse(json: dictionary) {
+                addItem(item: todoItem)
+            }
+        }
     }
     
     /// Поиск document directory
