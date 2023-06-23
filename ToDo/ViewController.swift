@@ -5,9 +5,8 @@
 //  Created by Zhdan Pavlov on 11.06.2023.
 //
 
-import UIKit
+import Foundation
 
-/// Элемент ToDo листа
 struct ToDoItem {
 
     enum Importance: String {
@@ -155,12 +154,10 @@ final class FileCache{
 
 extension FileCache {
     
-    /// Добавление item
     func addItem(item: ToDoItem) {
         idToItem[item.id] = item
     }
-    
-    /// Удаления item
+
     func removeItem(id: String) {
         idToItem[id] = nil
     }

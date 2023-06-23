@@ -1,7 +1,7 @@
 //___FILEHEADER___
 
 import XCTest
-@testable import дз_1___ШМР
+@testable import ToDo
 
 final class TodoItemTests: XCTestCase {
 
