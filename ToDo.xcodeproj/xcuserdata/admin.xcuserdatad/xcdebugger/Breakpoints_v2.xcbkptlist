@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "32A6F0B9-513F-4076-9790-DF7CFD7BBF2A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AA814AF-826E-410E-9CFA-C7794F785A4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55BFEEB0-8D54-45F4-92E6-200A7CE3EA60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAB19FF3-2B26-4DDF-80E5-396E23365D07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EAB19FF3-2B26-4DDF-80E5-396E23365D07 - d9ee2a384e724417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+               <Location
+                  uuid = "EAB19FF3-2B26-4DDF-80E5-396E23365D07 - d9ee2a384e7244f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "1040">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC3FF46A-00E9-4AA5-A925-DD77F8B7C669"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC3FF46A-00E9-4AA5-A925-DD77F8B7C669 - d9ee2a384e7244d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "CC3FF46A-00E9-4AA5-A925-DD77F8B7C669 - d9ee2a384e7244d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "988">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89887F26-8254-4729-8A2B-F8A5F461802E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F86E20-A664-4DCD-94CD-49C9B966027C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60F86E20-A664-4DCD-94CD-49C9B966027C - d9ee2a384e724478"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+               <Location
+                  uuid = "60F86E20-A664-4DCD-94CD-49C9B966027C - d9ee2a384e724459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "1372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D01CB6EE-D5DA-4EF3-98C1-0803C5FF8076"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D01CB6EE-D5DA-4EF3-98C1-0803C5FF8076 - d9ee2a384e724459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "1372">
+               </Location>
+               <Location
+                  uuid = "D01CB6EE-D5DA-4EF3-98C1-0803C5FF8076 - d9ee2a384e724436"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E6DC131-B86F-4F66-900D-33E17B22ADEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7E6DC131-B86F-4F66-900D-33E17B22ADEC - d9ee2a384e7247ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "1524">
+               </Location>
+               <Location
+                  uuid = "7E6DC131-B86F-4F66-900D-33E17B22ADEC - d9ee2a384e724478"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;Tests.FileReadandWriteTests.testItemReadAndWrite() -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0Tests/___1______Tests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B99F4568-F0EC-4BEF-840D-49EA5FED091C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;Tests/___1______Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "testItemReadAndWrite()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E60F9503-A66F-4F78-A3B8-4D03AFE529D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "read(fileName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E60F9503-A66F-4F78-A3B8-4D03AFE529D2 - b750629884b1ca6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;.FileCache.write(fileName: Swift.String) -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "964">
+               </Location>
+               <Location
+                  uuid = "E60F9503-A66F-4F78-A3B8-4D03AFE529D2 - b750629884b1ca6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x434;&#x437;_1___&#x428;&#x41c;&#x420;.FileCache.write(fileName: Swift.String) -&gt; ()"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "1092">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "294E065A-D143-4F7C-A169-86FC0400D1FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "parse(json:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B226D295-E938-4E82-B07C-CB7FAB01ADEF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "parse(json:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B226D295-E938-4E82-B07C-CB7FAB01ADEF - 437103ae345c39a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static &#x434;&#x437;_1___&#x428;&#x41c;&#x420;.ToDoItem.parse(json: Any) -&gt; Swift.Optional&lt;&#x434;&#x437;_1___&#x428;&#x41c;&#x420;.ToDoItem&gt;"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "B226D295-E938-4E82-B07C-CB7FAB01ADEF - 437103ae345c39a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static &#x434;&#x437;_1___&#x428;&#x41c;&#x420;.ToDoItem.parse(json: Any) -&gt; Swift.Optional&lt;&#x434;&#x437;_1___&#x428;&#x41c;&#x420;.ToDoItem&gt;"
+                  moduleName = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/SHMR/Yandex_Dz1/yandex_dz_1/%D0%B4%D0%B7%201%20_%20%D0%A8%D0%9C%D0%A0/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "776">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFFEC100-FE0F-48C6-99BE-4B149D21AD9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x434;&#x437; 1 _ &#x428;&#x41c;&#x420;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "parse(json:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
