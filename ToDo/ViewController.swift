@@ -16,13 +16,13 @@ class TodoViewController: UIViewController {
         
         super.viewDidLoad()
         initializeView()
+        settingAddButton()
         
         itemsTableView = UITableView(frame: view.bounds, style: .plain)
         itemsTableView.delegate = self
         itemsTableView.dataSource = self
         
         view.addSubview(itemsTableView)
-        
         itemsTableView.snp.makeConstraints { maker in
             maker.top.equalToSuperview().inset(150)
             maker.left.equalToSuperview().inset(10)
@@ -30,6 +30,8 @@ class TodoViewController: UIViewController {
             maker.right.equalToSuperview().inset(10)
         }
         itemsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
+        
+        settingAddButton()
     }
     
     func initializeView() {
@@ -53,6 +55,8 @@ extension TodoViewController: UITableViewDataSource {
         var сellСonfiguration = cell.defaultContentConfiguration()
         сellСonfiguration.text = itemsCache.items[cellRow].text
         cell.contentConfiguration = сellСonfiguration
+        cell.contentView.layer.cornerRadius = 5
+        cell.contentView.layer.masksToBounds = true
         
         return cell
     }
@@ -64,37 +68,57 @@ extension TodoViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal,
-                                        title: "") { [weak self] (action, view, taskDone) in
-                                        self?.itemsCache.items[indexPath.row].taskDone
-                                            taskDone(true)
+        let taskDone = UIContextualAction(style: .normal,
+                                          title: "") { [weak self] (action, view, taskDone) in
+            self?.itemsCache.items[indexPath.row].taskDone
+            taskDone(true)
         }
-        action.image = UIImage(contentsOfFile: "Prop=off")
-        action.backgroundColor = .systemBlue
-        return UISwipeActionsConfiguration(actions: [action])
+        taskDone.image = UIImage(named: "taskDone")
+        taskDone.backgroundColor = .systemGreen
+        return UISwipeActionsConfiguration(actions: [taskDone])
     }
     
-//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//        let info = UIContextualAction(style: .normal,
-//                                         title: "Archive") { [weak self] (action, view, completionHandler) in
-//                                            self?.handleMoveToArchive()
-//                                            completionHandler(true)
-//        }
-//        archive.backgroundColor = .systemGreen
-//
-//        // Trash action
-//        let trash = UIContextualAction(style: .destructive,
-//                                       title: "Trash") { [weak self] (action, view, completionHandler) in
-//                                        self?.handleMoveToTrash()
-//                                        completionHandler(true)
-//        }
-//        trash.backgroundColor = .systemRed
-//
-//    }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let moveToTrash = UIContextualAction(style: .destructive,
+                                             title: "") { [weak self] (action, view, taskDone) in
+            self?.itemsCache.items[indexPath.row].taskDone
+            taskDone(true)
+        }
+        moveToTrash.image = UIImage(named: "Trash")
+        moveToTrash.backgroundColor = .systemRed
+        
+        let info = UIContextualAction(style: .normal,
+                                      title: "Archive") { [weak self] (action, view, taskDone) in
+            self?.itemsCache.items[indexPath.row].taskDone
+            taskDone(true)
+        }
+        info.image = UIImage(named: "info")
+        info.backgroundColor = .systemGray
+        
+        return UISwipeActionsConfiguration(actions: [moveToTrash, info])
+    }
+}
+extension TodoViewController {
+    func settingAddButton() {
+        let addButton = UIButton()
+        addButton.setImage(UIImage(named: "Remove"), for: .normal)
+        addButton.addTarget(self, action: #selector(openDetailsViewController), for: .touchUpInside)
+        view.addSubview(addButton)
+        addButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().inset(714)
+            
+        }
+    }
+    @objc func openDetailsViewController() {
+        let detailsViewController = DetailsViewController()
+        detailsViewController.modalPresentationStyle = .formSheet
+        let navidationController = UINavigationController(rootViewController: detailsViewController)
+        self.present(navidationController, animated: true, completion: nil)
+    }
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            itemsCache.removeItem(id: itemsCache.items[indexPath.row].id)
-//        }
-//    }
+}
+
+class details: UIView {
+    
 }

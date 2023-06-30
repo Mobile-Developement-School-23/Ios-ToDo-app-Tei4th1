@@ -1,16 +1,28 @@
 PODS:
   - SnapKit (5.6.0)
+  - SwiftLint (0.52.3)
 
 DEPENDENCIES:
   - SnapKit
+  - SwiftLint (from `https://github.com/realm/SwiftLint`)
 
 SPEC REPOS:
   trunk:
     - SnapKit
 
+EXTERNAL SOURCES:
+  SwiftLint:
+    :git: https://github.com/realm/SwiftLint
+
+CHECKOUT OPTIONS:
+  SwiftLint:
+    :commit: 243549d49c1b0c2b23c6c83d4096316071970bc4
+    :git: https://github.com/realm/SwiftLint
+
 SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftLint: 76ec9c62ad369cff2937474cb34c9af3fa270b7b
 
-PODFILE CHECKSUM: 3aa4369126d6df4c9705c78bc054ef2b18c2c6d1
+PODFILE CHECKSUM: 82e646426b2fe9e30186d975636e762a63bca853
 
 COCOAPODS: 1.11.3

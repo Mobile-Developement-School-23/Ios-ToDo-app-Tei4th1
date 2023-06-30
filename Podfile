@@ -7,6 +7,7 @@ target 'ToDo' do
 
   # Pods for ToDo
 pod 'SnapKit'
+pod 'SwiftLint', :git => 'https://github.com/realm/SwiftLint'
 
   target 'ToDoTests' do
     inherit! :search_paths

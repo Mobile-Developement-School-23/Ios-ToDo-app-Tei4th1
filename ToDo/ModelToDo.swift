@@ -111,6 +111,3 @@ extension ToDoItem {
         return Date(timeIntervalSince1970: timeInterval)
     }
 }
-
-
-var test = ToDoItem(text: "zhopa", deadlineDate: nil, taskDone: false, changingDate: nil, importance: .ordinary)
